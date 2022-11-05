@@ -25,7 +25,18 @@ function cuantosMenores(invitados) {
   // };
   // cuantosMenores(invitados) devuelve 2
   // Tu código aca:
+  //var acc = 0;
 
+  var acc = 0;
+  var keys = Object.keys(invitados);
+
+  for (let i = 0; i < keys.length; i++) {
+    if ( invitados[keys[i]].edad < 18 ) {
+      acc++;
+    }
+  }
+
+  return acc;
 }
 
 
