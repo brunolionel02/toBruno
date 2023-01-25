@@ -13,28 +13,17 @@ function crearClaseMascota() {
       // Inicializar las propiedades de la mascota con los valores recibidos como argumento
       // Tu código aca:
 
-      this.nombre = nombre;
-      
-      this.dueño = {
-        nombre: dueño.nombre,
-        apellido: dueño.apellido
-      };
-
-      this.actividades = actividades;
     }
 
     getNombre() {
       // este método debe retornar el nombre de la mascota.
       // Tu código aca:
 
-      return this.nombre;
     }
 
     getDueño() {
       // El método debe retornar nombre y apellido del dueño (concatenados).
       // Tu código aca:
-      var fullDueño = this.dueño.nombre + ' ' + this.dueño.apellido;
-      return fullDueño;
     }
 
     addActividad(actividad, frecuencia) {
@@ -42,9 +31,6 @@ function crearClaseMascota() {
       // No debe retornar nada.
       // Tu código aca:
 
-      const nuevaActividad = {actividad: actividad, frecuencia: frecuencia}
-
-      this.actividades.push(nuevaActividad);
     }
 
     getActividades() {
@@ -54,12 +40,6 @@ function crearClaseMascota() {
       // mascotas.getActividades() debería devolver ['salir a caminar, 'baño']
       // Tu código aca:
       
-      var soloActividades = []
-
-      for ( let i = 0; i < this.actividades.length; i++) {
-        soloActividades.push(this.actividades[i].actividad);
-      }
-      return soloActividades;
     }
 
     getFrecuencia(actividad) {
@@ -68,11 +48,7 @@ function crearClaseMascota() {
       // [{actividad: 'salir a caminar', frecuencia: '1 vez al dia'}, {actividad: 'baño', frecuencia: '1 vez al mes'}]
       // mascotas.getFrecuencia('baño') debería devolver '1 vez al mes'
       // Tu código aca:
-      for ( let i = 0; i < this.actividades.length; i++ ) {
-        if ( this.actividades[i].actividad === actividad ) {
-          return this.actividades[i].frecuencia;
-        }
-      }
+      
     }
   }
 

@@ -12,16 +12,6 @@ function fakeBinary2(string) {
   // fakeBinary2('5627') devuelve "1101"
   // fakeBinary("729") devuelve "101"
   // Tu código aca:
-  var arr = string.split('')
-
-  var binary = arr.map(function(i) {
-    if ( Number(i) < 5) return '0';
-    return "1";
-  })
-
-  binary = binary.join('')
-
-  return binary;
 }
 
 // No modifiques nada debajo de esta linea //
